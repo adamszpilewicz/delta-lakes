@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  spark:
+    build:
+      context: .  # Ensure this points to the directory containing your Dockerfile
+    container_name: spark-container
+    hostname: spark
+    ports:
+      - "8080:8080"  # map the Spark UI to localhost:8080, first port is the host port, second port is the container port
+      - "7077:7077"  # map the Spark Master to localhost:7077, first port is the host port, second port is the container port
+      - "4040:4040"  # map the Spark UI to localhost:4040, first port is the host port, second port is the container port
+    volumes:
+      - ./app:/app
+      - ./data:/data  # Map the directory where data is saved to a local directory
+      - ./input:/input  # Map the directory where input data is saved to a local directory
+      - ./app/spark-warehouse:/opt/project/app/spark-warehouse
+    command: ["/bin/bash", "-c", "while true; do sleep 1000; done"] # Keep the container running indefinitely

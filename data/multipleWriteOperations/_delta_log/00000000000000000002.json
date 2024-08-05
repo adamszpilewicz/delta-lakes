@@ -1,0 +1,30 @@
+{
+  "commitInfo": {
+    "timestamp": 1722758397766,
+    "operation": "WRITE",
+    "operationParameters": {
+      "mode": "Append",
+      "partitionBy": "[]"
+    },
+    "readVersion": 1,
+    "isolationLevel": "Serializable",
+    "isBlindAppend": true,
+    "operationMetrics": {
+      "numFiles": "1",
+      "numOutputRows": "1",
+      "numOutputBytes": "1036"
+    },
+    "engineInfo": "Apache-Spark/3.5.1 Delta-Lake/3.2.0",
+    "txnId": "3892114e-f28d-4d9f-8989-9e1e7775d8e1"
+  }
+}
+{
+  "add": {
+    "path": "part-00000-f39bc7b7-b769-47de-a6b5-3784195900d0-c000.snappy.parquet",
+    "partitionValues": {},
+    "size": 1036,
+    "modificationTime": 1722758397749,
+    "dataChange": true,
+    "stats": "{\"numRecords\":1,\"minValues\":{\"patientId\":8,\"name\":\"Patient 8\",\"city\":\"San Diego\"},\"maxValues\":{\"patientId\":8,\"name\":\"Patient 8\",\"city\":\"San Diego\"},\"nullCount\":{\"patientId\":0,\"name\":0,\"city\":0}}"
+  }
+}

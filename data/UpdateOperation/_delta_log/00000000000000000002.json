@@ -1,0 +1,49 @@
+{
+  "commitInfo": {
+    "timestamp": 1722758867264,
+    "operation": "UPDATE",
+    "operationParameters": {
+      "predicate": "[\"(patientId#354L = 1)\"]"
+    },
+    "readVersion": 1,
+    "isolationLevel": "Serializable",
+    "isBlindAppend": false,
+    "operationMetrics": {
+      "numRemovedFiles": "1",
+      "numRemovedBytes": "725",
+      "numCopiedRows": "1",
+      "numDeletionVectorsAdded": "0",
+      "numDeletionVectorsRemoved": "0",
+      "numAddedChangeFiles": "0",
+      "executionTimeMs": "3932",
+      "numDeletionVectorsUpdated": "0",
+      "scanTimeMs": "3784",
+      "numAddedFiles": "1",
+      "numUpdatedRows": "1",
+      "numAddedBytes": "728",
+      "rewriteTimeMs": "147"
+    },
+    "engineInfo": "Apache-Spark/3.5.1 Delta-Lake/3.2.0",
+    "txnId": "2982b45b-02d4-47bb-b56c-aec0b5e0710e"
+  }
+}
+{
+  "add": {
+    "path": "part-00000-25bc1b15-dda1-4776-b0d5-234b25d0b857-c000.snappy.parquet",
+    "partitionValues": {},
+    "size": 728,
+    "modificationTime": 1722758867251,
+    "dataChange": true,
+    "stats": "{\"numRecords\":2,\"minValues\":{\"patientId\":1,\"name\":\"P2\"},\"maxValues\":{\"patientId\":2,\"name\":\"p11\"},\"nullCount\":{\"patientId\":0,\"name\":0}}"
+  }
+}
+{
+  "remove": {
+    "path": "part-00000-178baa35-fcfd-4097-ad22-50a9cab5f281-c000.snappy.parquet",
+    "deletionTimestamp": 1722758867260,
+    "dataChange": true,
+    "extendedFileMetadata": true,
+    "partitionValues": {},
+    "size": 725
+  }
+}

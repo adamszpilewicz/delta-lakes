@@ -1,0 +1,48 @@
+{
+  "commitInfo": {
+    "timestamp": 1722758395281,
+    "operation": "WRITE",
+    "operationParameters": {
+      "mode": "ErrorIfExists",
+      "partitionBy": "[]"
+    },
+    "isolationLevel": "Serializable",
+    "isBlindAppend": true,
+    "operationMetrics": {
+      "numFiles": "1",
+      "numOutputRows": "6",
+      "numOutputBytes": "1118"
+    },
+    "engineInfo": "Apache-Spark/3.5.1 Delta-Lake/3.2.0",
+    "txnId": "73b1037f-eb8b-4c7b-a64f-e3c57b8e4ec0"
+  }
+}
+{
+  "metaData": {
+    "id": "85563410-d366-4ab6-81f2-fb8e3befae7e",
+    "format": {
+      "provider": "parquet",
+      "options": {}
+    },
+    "schemaString": "{\"type\":\"struct\",\"fields\":[{\"name\":\"patientId\",\"type\":\"long\",\"nullable\":true,\"metadata\":{}},{\"name\":\"name\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"city\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}",
+    "partitionColumns": [],
+    "configuration": {},
+    "createdTime": 1722758393369
+  }
+}
+{
+  "protocol": {
+    "minReaderVersion": 1,
+    "minWriterVersion": 2
+  }
+}
+{
+  "add": {
+    "path": "part-00000-0916ce7a-2249-4cbf-bb9d-9d92ecf1b22a-c000.snappy.parquet",
+    "partitionValues": {},
+    "size": 1118,
+    "modificationTime": 1722758395161,
+    "dataChange": true,
+    "stats": "{\"numRecords\":6,\"minValues\":{\"patientId\":1,\"name\":\"Patient 1\",\"city\":\"Boston\"},\"maxValues\":{\"patientId\":6,\"name\":\"Patient 6\",\"city\":\"Washington\"},\"nullCount\":{\"patientId\":0,\"name\":0,\"city\":0}}"
+  }
+}
